@@ -1,0 +1,161 @@
+/* App.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2.5em; /* Увеличенный размер заголовка */
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Styles for Products component */
+.productsContainer {
+  text-align: left;
+  width: 60%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.productsContainer h1 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #34495e;
+  text-align: left; /* Выравнивание заголовка слева */
+}
+
+.productsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+/* Styles for Product component */
+.productCard {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px;
+  width: 250px;
+  text-align: center;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.productTitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.productPrice {
+  font-size: 1em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Counter styles (for cart items) */
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.counter button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.counter button:hover {
+  background-color: #2980b9;
+}
+
+/* Styles for cart-related button */
+.productCard button {
+  padding: 8px 15px;
+  background-color: #2ecc71; /* Зеленый цвет для кнопки "В корзину" */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.productCard button:hover {
+  background-color: #27ae60; /* Затемненный зеленый цвет при наведении */
+}
+
+/* Cart styles */
+.cartContainer {
+  width: 30%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.cartContainer h1 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+/* Total styles */
+.totalContainer {
+  width: 100%; /* Total занимает всю ширину контейнера */
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
+
+.totalContainer h1 {
+  font-size: 1.6em;
+  margin-bottom: 5px;
+  color: #34495e;
+}
+
+.totalContainer p {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #27ae60;
+}
